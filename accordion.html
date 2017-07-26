@@ -2,82 +2,114 @@
 <html>
 
 <head>
-  <style>
-    button.accordion {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
-
-    button.accordion.active,
-    button.accordion:hover {
-      background-color: #ddd;
-    }
-
-    button.accordion:after {
-      content: '\002B';
-      color: #777;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-
-    button.accordion.active:after {
-      content: "\2212";
-    }
-
-    div.panel {
-      padding: 0 18px;
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-    }
-  </style>
+  <link rel="stylesheet" href="accordion.css"></link>
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-
-  <h2>Accordion with symbols</h2>
-  <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
   <button class="accordion">Section 1</button>
   <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Typical business hours at MSA are 9:30 A.M. to 6:30 P.M. Monday to Saturday. You are expected to report latest by 9:40 A.M. In case, you are not able to report at time due to some challenge, you are expected to convey the same to MSA admin via a phone
+      call along with your estimated time for arrival.You’re entitled to half an hour paid Lunch Break.</p>
+    <a href="../data/reference/List of Holidays_2017.pdf" class="button" target="_blank">List of Holidays</a>
+    <br>
   </div>
 
   <button class="accordion">Section 2</button>
   <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h4>Entitlement of Leave</h4>
+    <p>All the employees are entitled for 24 leaves in the accounting year and hence 2 leaves will be credited to their account on first day of the month. Accounting year for the purpose of leave will be from January to December. In case if an employee joins
+      in the mid of the year then he will be entitled for leave on the prorata basis for the remaining period of the accounting year.
+      <br>
+      <br> Normally an employee can avail maximum leaves up to available leave balance credit up to that month. In case of continues leaves, intervening weekly offs/ holidays will be treated as leaves. All leaves has to be intimated, applied and sanctioned
+      in advance before going on leave.
+    </p>
+
+    <h4>Leave without Pay</h4>
+    <p>If an employee is taking more leaves than accumulated leave balance to his credit due to pressing requirement to go on leave to meet some unavoidable commitments; can be granted leave without pay (LWP) at the sole discretion of management. This is
+      however granted only in exceptional cases. The implications of leave without pay are as follows.
+      <br>
+      <br>No salary and no monetary benefits whatsoever during the period of leave.
+      <br>
+      <br> An employee taking leave without prior sanction of leave will be treated on LWP. However in these cases reasons for absence and the circumstances under which the employee could not get his/her leave pre-sanctioned are first investigated and
+      then the leave is regularized as paid leave at the sole discretion of management.
+    </p>
+
+    <h4>Compensatory Leave</h4>
+    <p>All employees who are asked to work on weekly-off days or overstay on working days are entitled for compensatory leave. Compensatory leave will be credited as ¼ day for every completed two hours of work. No compensatory leave will be credited for
+      instances of less than 2 hours. Such Compensatory leave will be merged with the leave entitlement. All the compensatory leave shall be entered in the Leave Card immediately on the next day of extra work and submitted for approval.</p>
+
+    <h4>Short Leave</h4>
+    <p>All the employees are expected to report to the duty on or before their stipulated reporting time in general but not later than 10 minutes after stipulated reporting time in exceptional circumstances.
+      <br>
+      <br>Management recognizes that due to issues related to vehicle or traffic rush an employee might get delayed beyond 10 minutes. Management will grant such delays in reporting to the duty beyond 10 minutes but not later than 30 minutes from stipulated
+      reporting time as SHORT LEAVE. Such instances of grant of Short leaves are two instances per calendar month; third instance and onwards will treated as each of 1/4 leave.
+      <br>
+      <br>Management also recognizes need for leave to attend any personal work during working hours. Management will grant one instance per month of 1 hour leave per calendar month during working hours.
+      <br>
+      <br>Short leaves shall not be clubbed with each other or merged with any other leave.
+      <br>
+      <br>Short leaves shall not be treated as right to claim and hence Short Leaves will not be carried forward. All instances of Short leaves shall be recorded in the leave card and sanctioned by sanctioning authority.
+    </p>
+
+    <h4>Leave Accumulation &amp; Encashment</h4>
+    <p>Accounting of leave is done based on calendar year from January to December. Leave can be accumulated and Leave Balance including Compensatory leave will be carry forwarded to next leave accounting year. At the end of Leave accounting year, employee
+      whose accumulated leave balances exceeds 15 days can opt of encashment of leaves exceeding 15 days.
+      <br>
+      <br>The encashment is done at the rate of salary paid for the month of December of that year. Payment for encashed leave however shall be done by 31st January of the following year. If an employee do not opt for encashment, all accumulated balances
+      will be carry forwarded to next Leave accounting year.
+      <br>
+      <br>Leave encashment request will not be entertained during mid of the year. Leave encashment request shall be forwarded as per attached format. </p>
+
+    <h4>Sanctioning Authority</h4>
+    <p>Leave Cards for each employee will be maintained separately and will be kept with administration department at all the times. Employees can collect their leave card from administration department for leave application and return back to administration
+      after taking sanction of leave from Management. Leave will be sanctioned as per the balance and in line with the exigencies of the work.</p>
+    <p>All employees are requested to co-operate and follow the company leave rules.</p>
+
+    <a href="../data/forms/Form - Leave Encashment Request.doc" class="button">Leave Encashment Request Form</a>
+    <br>
   </div>
 
   <button class="accordion">Section 3</button>
   <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>You are expected to be responsible for the resource of MSA that you use. The admin maintains an inventory of resources, and therefore, you are expected to share with the admin the resources you carry outside of the workplace.
+      <br>
+      <br> Use of social media is banned in this workplace. Use of internet shall be limited to project related work.
+      <br>
+      <br> Use of personal mobile phone is not allowed inside office premise. You are free to use studio mobiles in case of urgent need.
+    </p>
   </div>
 
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>Taking any data or document outside of office premise is strictly forbidden.</p>
+  </div>
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].onclick = function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      }
-    }
-  </script>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>Your password shall contain at least one number, one letter, and one special character. Your password should be at least 8 characters long and it should not contain your name. You will be reminded to change your password automatically by the system.
+      When you change it, make sure you remember it. Password for your user profile must not be shared with anyone.</p>
+  </div>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>You are not to discuss the specifics of any projects, tradecrafts, or intellectual endeavors of this firm outside office premises.</p>
+  </div>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>You are expected to generate report of your daily work. You are not to alter the format of DPR in anyway. Any fancy formatting, change in color of fonts, size of fonts is forbidden.
+      <br>
+      <br>Apart from DPR, you will also use a task management workflow from Asana. The Asana workflow will be at the center of your daily project delivery, project updates, communication, and reporting. </p>
+  </div>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>You are expected to always present yourself in a formal attire.</p>
+  </div>
+
+  <script src="accordion.js"></script>
 
 </body>
 
