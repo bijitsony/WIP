@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vendors' List</title>
+    <script>
+
+      function name() {
+        var Vname = document.getElementById('name');
+        return Vname;
+      }
+
+      function email() {
+        var Vemail = document.getElementById('email');
+        return Vemail;
+      }
+
+      function toTable() {
+        var appendToTable = document.getElementById('tbody').createElement("tr");
+        appendToTable.innerHtml = name();
+
+        var show = document.getElementById('result').innerHtml(appendToTable);
+
+        return show;
+      }
+
+    </script>
+  </head>
+  <body>
+    <label for="Name">Name: </label><input id="name" /> <br /> <br />
+    <label for="Email">Email: </label><input type="email" id="email"/> <br /> <br />
+    <button onclick="toTable()">Append</button>
+    <table>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+
+    <p id="result">
+
+    </p>
+  </body>
+</html>
